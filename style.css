@@ -1,0 +1,231 @@
+body{
+background:#050505;
+color:#9ca3af;
+font-family:monospace;
+margin:0;
+}
+
+.container{
+width:780px;
+margin:auto;
+padding:40px;
+}
+
+/* PROFILE */
+
+.profile{
+display:flex;
+gap:20px;
+align-items:flex-start;
+}
+
+.avatar{
+width:95px;
+height:95px;
+border-radius:16px;
+}
+
+.profile-info h1{
+margin:0;
+color:white;
+font-size:28px;
+}
+
+.username{
+color:#ff7a00;
+margin-top:5px;
+}
+
+.status{
+margin-top:6px;
+color:#ccc;
+}
+
+.meta{
+margin-top:6px;
+color:#888;
+display:flex;
+gap:8px;
+}
+
+.dot{
+opacity:0.5;
+}
+
+.bio{
+margin-top:15px;
+line-height:1.6;
+max-width:550px;
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:15px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.btn{
+border:1px solid #333;
+padding:8px 18px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+background:#111;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.btn:hover
+
+.icon-btn{
+border:1px solid #333;
+padding:8px 12px;
+border-radius:10px;
+background:#111;
+text-decoration:none;
+}
+
+.icon-btn:hover
+
+.or{
+color:#777;
+font-size:14px;
+}
+
+.divider{
+color:#555;
+}
+
+/* HEADINGS */
+
+h3{
+color:#ff7a00;
+font-size:13px;
+letter-spacing:3px;
+margin-top:40px;
+}
+
+hr{
+border:0;
+border-top:1px solid #1f1f1f;
+margin:30px 0;
+}
+
+/* SKILLS */
+
+.skills{
+overflow:hidden;
+border:1px solid #1f1f1f;
+padding:10px;
+}
+
+.skill-track{
+display:flex;
+gap:12px;
+width:max-content;
+animation:scroll 18s linear infinite;
+}
+
+.skills span{
+border:1px solid #1f1f1f;
+padding:6px 10px;
+border-radius:6px;
+white-space:nowrap;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+/* EXPERIENCE */
+
+.card{
+border:1px dashed #1f1f1f;
+padding:15px;
+}
+
+.job{
+display:flex;
+justify-content:space-between;
+}
+
+.status-badge{
+background:#2d1600;
+color:#ff7a00;
+padding:2px 8px;
+border-radius:6px;
+font-size:12px;
+}
+
+.date{
+color:#666;
+font-size:12px;
+}
+
+/* PROJECTS */
+
+.project{
+border:1px dashed #1f1f1f;
+padding:15px;
+margin-top:15px;
+}
+
+.project h4{
+color:white;
+margin:0;
+}
+
+.project a{
+color:#ff7a00;
+text-decoration:none;
+}
+
+/* GITHUB */
+
+.github-box{
+border:1px dashed #1f1f1f;
+padding:20px;
+}
+
+.github-chart{
+width:100%;
+}
+
+.github-bottom{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+}
+
+.highlight{
+color:#ff7a00;
+}
+
+/* LEGEND */
+
+.legend{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.box{
+width:10px;
+height:10px;
+border-radius:2px;
+}
+
+.l1{background:#2b1500;}
+.l2{background:#5c2e00;}
+.l3{background:#a44e00;}
+.l4{background:#ff7a00;}
+
+footer{
+margin-top:40px;
+color:#555;
+}
