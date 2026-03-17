@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sai Kiran</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="favicon.png">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+<div class="loader-box">
+Hold On...
+</div>
+
+</div>
+
+
+<div class="container">
+
+<!-- PROFILE -->
+
+<div class="hero">
+
+<div class="avatar-wrap">
+
+<img src="dp.png" class="avatar">
+
+</div>
+
+<div class="hero-text">
+
+<h1>Sai Kiran</h1>
+
+<p class="username">@keranbyge</p>
+
+<p class="status">Building open-source projects </p>
+
+<p class="location">
+ India • <span id="time"></span>
+</p>
+
+<p class="bio">
+
+Yup! I'm a Full Stack Developer. Big deal, right? But wait... there's more! I'm not just any developer, I love building solutions and solving problems. I enjoy crafting websites with modern technologies.
+
+</p>
+
+<div class="buttons">
+
+<a href="https://x.com/keranbyge" class="btn">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter DM
+</a>
+
+<span class="or">OR</span>
+
+<a href="mailto:sunkusaikiran@gmail.com" class="btn">
+<i class="fa-solid fa-envelope"></i>
+Email Me
+</a>
+
+<a href="https://github.com/keranbyge" class="icon-btn">
+<i class="fa-brands fa-github"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<!-- SKILLS -->
+
+<h3 class="section-title">My Skills</h3>
+
+<div class="skills-container">
+
+<div class="skills">
+
+<div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+<div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+<div class="skill"><i class="fa-brands fa-react"></i> React</div>
+<div class="skill"><i class="fa-brands fa-node"></i> NodeJS</div>
+<div class="skill"><i class="fa-brands fa-git-alt"></i> Git</div>
+<div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+<div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+<div class="skill"><i class="fa-brands fa-js"></i> TypeScript</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<!-- EXPERIENCE -->
+
+<h3 class="section-title">Work Experience</h3>
+
+<div class="card">
+
+<div class="card-header">
+
+<h4>Open Source Contributor</h4>
+
+<span class="badge">Completed</span>
+
+</div>
+
+<p>
+
+Contributing to GitHub open-source repositories by submitting pull requests and improvements.
+
+</p>
+
+<p class="date">
+
+2025 — Present | Remote
+
+</p>
+
+</div>
+
+<hr>
+
+<!-- PROJECTS -->
+
+<h3 class="section-title">My Projects</h3>
+
+<div class="card">
+
+<h4>Heart Music Visualizer</h4>
+
+<p>Music visualization system built using Python.</p>
+
+<a href="#" class="project-link">GitHub</a>
+
+</div>
+
+<div class="card">
+
+<h4>Sleep Detection</h4>
+
+<p>AI based sleep detection using computer vision.</p>
+
+<a href="#" class="project-link">GitHub</a>
+
+</div>
+
+<div class="card">
+
+<h4>Air Canvas AI</h4>
+
+<p>Draw in air using OpenCV and hand tracking.</p>
+
+<a href="#" class="project-link">GitHub</a>
+
+</div>
+
+<hr>
+
+<!-- GITHUB -->
+
+<h3 class="section-title">GitHub Activity</h3>
+
+<img
+src="https://ghchart.rshah.org/keranbyge"
+class="github-chart"
+/>
+
+<hr>
+
+<!-- CONNECT -->
+
+<div class="connect-box">
+
+<h2>Let's Connect</h2>
+
+<p>Feel free to reach out through any of these platforms</p>
+
+<div class="connect-buttons">
+
+<a href="https://x.com/keranbyge" class="connect-btn">
+<i class="fa-brands fa-x-twitter"></i> Twitter
+</a>
+
+<a href="https://github.com/keranbyge" class="connect-btn">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
+
+
+</div>
+
+</div>
+
+<p class="quote">
+"Nothing Is Perfect – But You Can Make It Better."
+</p>
+
+<div class="footer">
+
+<p>Designed & Made with ❤️</p>
+<p>© 2026 Sai Kiran</p>
+
+</div>
+
+</div>
+
+<script>
+
+function updateTime(){
+
+const now = new Date();
+
+document.getElementById("time").innerText =
+now.toLocaleTimeString("en-IN",{hour12:false});
+
+}
+
+setInterval(updateTime,1000);
+
+updateTime();
+
+
+window.onload = function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none"
+
+},2000)
+
+}
+
+</script>
+
+</body>
+</html>
