@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Django Contribution</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+<a href="index.html">← home</a>
+<a href="blogs.html">blogs</a>
+<a href="projects.html">projects</a>
+</div>
+
+<div class="container">
+
+<h1 class="title">
+My First Contribution to Django 
+</h1>
+
+<p class="date">March 2026</p>
+
+<hr>
+
+<!-- INTRO -->
+
+<h2> Introduction</h2>
+
+<p>
+I recently started exploring Django internals to understand how its template system works.
+While working with templates, I noticed that Django silently ignores missing variables and renders them as empty strings.
+</p>
+
+<p>
+This made me think:
+<b>What if developers want stricter behavior during development?</b>
+</p>
+
+<!-- IDEA -->
+
+<h2> The Idea</h2>
+
+<p>
+I came up with an idea to introduce a strict mode for template variables.
+</p>
+
+<ul>
+<li>Raise an error when a variable is missing</li>
+<li>Keep it optional (so existing apps don’t break)</li>
+<li>Improve debugging for developers</li>
+</ul>
+
+<!-- WHAT I DID -->
+
+<h2> What I Did</h2>
+
+<p>
+To explore this idea, I:
+</p>
+
+<ul>
+<li>Forked the Django repository</li>
+<li>Created a new branch</li>
+<li>Implemented initial changes</li>
+<li>Opened a Pull Request</li>
+</ul>
+
+<p>
+This was my first time contributing to a large open-source project.
+</p>
+
+<!-- CHALLENGES -->
+
+<h2> Challenges I Faced</h2>
+
+<ul>
+<li>CI (Jenkins) tests were failing</li>
+<li>Database errors (PostgreSQL not running)</li>
+<li>Understanding Django’s testing system</li>
+</ul>
+
+<p>
+At first, it was confusing, but I learned how large projects manage testing and environments.
+</p>
+
+<!-- WHAT NEXT -->
+
+<h2> What Happened Next</h2>
+
+<p>
+After opening the PR:
+</p>
+
+<ul>
+<li>Maintainers reviewed it</li>
+<li>They suggested creating a Trac ticket</li>
+<li>Discussion moved to Django’s new-features repo</li>
+</ul>
+
+<p>
+Instead of merging directly, it became a design discussion.
+</p>
+
+<!-- FEEDBACK -->
+
+<h2> Community Feedback</h2>
+
+<ul>
+<li>Global strict mode may break existing templates</li>
+<li>Some templates rely on missing variables</li>
+<li>Per-template approach might be better</li>
+<li>Real-world testing is important</li>
+</ul>
+
+<!-- LEARNING -->
+
+<h2> What I Learned </h2>
+
+<ul>
+<li>Open source is not just coding</li>
+<li>Backward compatibility is important</li>
+<li>Small changes can affect big systems</li>
+<li>Feedback is very valuable</li>
+<li>Patience is key</li>
+</ul>
+
+<!-- STATUS -->
+
+<h2> Current Status</h2>
+
+<p>
+The feature is under discussion. I am exploring:
+</p>
+
+<ul>
+<li>Global settings</li>
+<li>Per-template configuration</li>
+</ul>
+
+<!-- CONCLUSION -->
+
+<h2> Conclusion</h2>
+
+<p>
+This was my first real contribution to Django and a great learning experience.
+I’m excited to continue contributing to open source.
+</p>
+
+<hr>
+
+<!-- GITHUB LINK -->
+
+<p>
+👉 View my PR:
+<a href="https://github.com/django/django/pull/20772" target="_blank">
+Click here
+</a>
+</p>
+
+</div>
+
+</body>
+</html>
